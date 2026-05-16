@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>$APR — Apple Rewards | Hold $APR. Earn $APPLE. Heal a Fox.</title>
-<meta name="description" content="$APR is the rewards token for $APPLE — the #2 charity coin on donate.gg. 5% of every trade buys back $APPLE and pays it to holders, funding Apple the fox's care at Arctic Fox Daily Rescue."/>
+<title>$APR — Apple Rewards | Hold $APR. Earn $APPLE. Save Apple the Fox.</title>
+<meta name="description" content="$APR is the rewards token for $APPLE — the #2 charity coin on donate.gg. 4% buy &amp; 4% sell tax, 100% routed to $APPLE rewards for holders, funding Apple the fox's care at Arctic Fox Daily Wildlife Rescue."/>
 <meta property="og:title" content="$APR — Apple Rewards"/>
-<meta property="og:description" content="Hold $APR. Earn $APPLE. Heal a fox. 5% tax → buybacks → distributed to holders."/>
-<meta property="og:image" content="assets/apr-coin.jpg"/>
-<link rel="icon" href="assets/apr-coin.jpg" type="image/jpeg"/>
+<meta property="og:description" content="Hold $APR. Earn $APPLE. Save Apple the Fox. 4% buy &amp; sell tax → 100% $APPLE rewards → distributed to holders."/>
+<meta property="og:image" content="assets/aprcoin.jpg"/>
+<link rel="icon" href="assets/aprcoin.jpg" type="image/jpeg"/>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=JetBrains+Mono:wght@400;500&family=Cormorant+Garamond:ital,wght@1,500&display=swap" rel="stylesheet">
@@ -20,9 +20,9 @@
     --surface-2:#22130f;
     --line:#2c1a15;
     --line-hi:#3a2118;
-    --red:#d8242c;
-    --red-deep:#9c1218;
-    --red-glow:#ff3a44;
+    --red:#16a34a;
+    --red-deep:#14532d;
+    --red-glow:#4ade80;
     --gold:#e8b94a;
     --gold-2:#f5cf6b;
     --gold-deep:#a07d24;
@@ -34,9 +34,9 @@
   html,body{margin:0;padding:0;background:var(--bg);color:var(--cream);font-family:"DM Sans",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
   body{
     background:
-      radial-gradient(1100px 700px at 80% -10%, rgba(216,36,44,.22), transparent 60%),
+      radial-gradient(1100px 700px at 80% -10%, rgba(22,163,74,.22), transparent 60%),
       radial-gradient(900px 600px at -10% 40%, rgba(232,185,74,.08), transparent 60%),
-      radial-gradient(800px 600px at 50% 110%, rgba(216,36,44,.12), transparent 60%),
+      radial-gradient(800px 600px at 50% 110%, rgba(22,163,74,.12), transparent 60%),
       var(--bg);
     overflow-x:hidden;
   }
@@ -57,8 +57,8 @@
   .brand{display:flex;align-items:center;gap:12px;font-family:"Archivo Black",sans-serif;letter-spacing:.04em}
   .brand-mark{
     width:36px;height:36px;border-radius:50%;
-    background:url('assets/apr-coin.jpg') center/cover;
-    box-shadow:0 0 0 1px var(--gold-deep), 0 4px 16px rgba(216,36,44,.4);
+    background:url('assets/aprcoin.jpg') center/cover;
+    box-shadow:0 0 0 1px var(--gold-deep), 0 4px 16px rgba(22,163,74,.4);
     flex-shrink:0;
   }
   .brand-name{font-size:18px;color:var(--cream)}
@@ -77,12 +77,12 @@
     border:1px solid transparent;cursor:pointer;transition:transform .15s ease, box-shadow .2s ease, background .2s ease;
   }
   .btn-primary{
-    background:linear-gradient(180deg,#ec3a42,#a8161d);
+    background:linear-gradient(180deg,#22c55e,#15803d);
     color:#fff5e8;
-    box-shadow:0 1px 0 rgba(255,255,255,.15) inset, 0 -2px 0 rgba(0,0,0,.3) inset, 0 10px 28px rgba(216,36,44,.45);
-    border:1px solid #ff5057;
+    box-shadow:0 1px 0 rgba(255,255,255,.15) inset, 0 -2px 0 rgba(0,0,0,.3) inset, 0 10px 28px rgba(22,163,74,.45);
+    border:1px solid #4ade80;
   }
-  .btn-primary:hover{transform:translateY(-1px);box-shadow:0 1px 0 rgba(255,255,255,.2) inset, 0 -2px 0 rgba(0,0,0,.3) inset, 0 14px 36px rgba(216,36,44,.6)}
+  .btn-primary:hover{transform:translateY(-1px);box-shadow:0 1px 0 rgba(255,255,255,.2) inset, 0 -2px 0 rgba(0,0,0,.3) inset, 0 14px 36px rgba(22,163,74,.6)}
   .btn-ghost{background:rgba(232,185,74,.06);color:var(--gold);border:1px solid rgba(232,185,74,.3)}
   .btn-ghost:hover{background:rgba(232,185,74,.12)}
   .btn-gold{
@@ -155,7 +155,7 @@
   }
   .medallion-glow{
     position:absolute;inset:8%;border-radius:50%;
-    background:radial-gradient(circle, rgba(216,36,44,.55), rgba(216,36,44,0) 60%);
+    background:radial-gradient(circle, rgba(22,163,74,.55), rgba(22,163,74,0) 60%);
     filter:blur(40px);
     animation:breathe 4s ease-in-out infinite;
   }
@@ -196,7 +196,7 @@
   .floating-tag.tag-2{bottom:14%;right:-4%;animation-delay:-1.5s}
   .floating-tag.tag-3{top:50%;right:-6%;animation-delay:-3s}
   @media (max-width:980px){.floating-tag.tag-3{display:none}}
-  .floating-tag .ico{width:24px;height:24px;border-radius:50%;display:grid;place-items:center;background:rgba(216,36,44,.18);color:var(--red-glow);font-weight:700}
+  .floating-tag .ico{width:24px;height:24px;border-radius:50%;display:grid;place-items:center;background:rgba(22,163,74,.18);color:var(--red-glow);font-weight:700}
 
   /* ===== STATS ===== */
   .stats{
@@ -269,7 +269,7 @@
     display:grid;grid-template-columns:1.1fr 1fr;gap:48px;align-items:center;
     padding:48px;border-radius:28px;
     background:
-      radial-gradient(800px 300px at 0% 0%, rgba(216,36,44,.12), transparent 60%),
+      radial-gradient(800px 300px at 0% 0%, rgba(22,163,74,.12), transparent 60%),
       linear-gradient(180deg,var(--surface),var(--bg-2));
     border:1px solid var(--line);
     position:relative;overflow:hidden;
@@ -301,7 +301,7 @@
     position:relative;padding:80px 0;
     border-top:1px solid var(--line);border-bottom:1px solid var(--line);
     background:
-      radial-gradient(700px 400px at 90% 50%, rgba(216,36,44,.16), transparent 60%),
+      radial-gradient(700px 400px at 90% 50%, rgba(22,163,74,.16), transparent 60%),
       linear-gradient(180deg,var(--bg-2),var(--bg));
   }
   .charity-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:64px;align-items:center}
@@ -310,13 +310,13 @@
     position:relative;aspect-ratio:1/1;border-radius:28px;overflow:hidden;
     border:1px solid var(--line-hi);
     background:
-      radial-gradient(circle at 60% 40%, rgba(216,36,44,.4), rgba(13,8,7,.9) 70%),
+      radial-gradient(circle at 60% 40%, rgba(22,163,74,.4), rgba(13,8,7,.9) 70%),
       linear-gradient(180deg,var(--surface-2),var(--bg-2));
     display:grid;place-items:center;
   }
   .charity-art .stamp{
     position:relative;width:78%;border-radius:50%;
-    box-shadow:0 30px 80px rgba(0,0,0,.6), 0 0 0 1px rgba(232,185,74,.3), 0 0 100px rgba(216,36,44,.3);
+    box-shadow:0 30px 80px rgba(0,0,0,.6), 0 0 0 1px rgba(232,185,74,.3), 0 0 100px rgba(22,163,74,.3);
   }
   .charity-tag{
     position:absolute;top:24px;left:24px;
@@ -334,7 +334,7 @@
   .charity-progress .top{display:flex;justify-content:space-between;font-size:12px;color:var(--muted);margin-bottom:10px;letter-spacing:.08em;text-transform:uppercase}
   .charity-progress .top b{color:var(--gold);font-family:"JetBrains Mono"}
   .progress-bar{height:8px;border-radius:999px;background:rgba(255,255,255,.06);overflow:hidden}
-  .progress-fill{height:100%;width:62%;background:linear-gradient(90deg,#d8242c,#f5cf6b);border-radius:999px;box-shadow:0 0 18px rgba(232,185,74,.4)}
+  .progress-fill{height:100%;width:62%;background:linear-gradient(90deg,#16a34a,#f5cf6b);border-radius:999px;box-shadow:0 0 18px rgba(232,185,74,.4)}
 
   .charity h2{font-family:"Archivo Black";font-size:clamp(34px,4.6vw,54px);line-height:.98;letter-spacing:-.02em;color:var(--cream);margin:14px 0 20px;text-wrap:balance}
   .charity h2 .accent{font-family:"Cormorant Garamond";font-style:italic;font-weight:500;color:var(--red-glow)}
@@ -360,7 +360,7 @@
   }
   .phase.done .badge{background:rgba(101,217,122,.12);color:#65d97a;border:1px solid rgba(101,217,122,.25)}
   .phase.live .badge{background:rgba(232,185,74,.12);color:var(--gold);border:1px solid rgba(232,185,74,.3)}
-  .phase.next .badge{background:rgba(216,36,44,.12);color:var(--red-glow);border:1px solid rgba(216,36,44,.3)}
+  .phase.next .badge{background:rgba(22,163,74,.12);color:var(--red-glow);border:1px solid rgba(22,163,74,.3)}
   .phase.soon .badge{background:rgba(255,255,255,.04);color:var(--muted);border:1px solid var(--line)}
   .phase h4{font-family:"Archivo Black";font-size:22px;margin:14px 0 8px;color:var(--cream);letter-spacing:-.01em}
   .phase ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px;font-size:14px;color:var(--muted)}
@@ -414,8 +414,8 @@
   .cta-banner{
     margin:60px 0;padding:60px 48px;border-radius:28px;text-align:center;
     background:
-      radial-gradient(600px 300px at 50% 0%, rgba(216,36,44,.35), transparent 60%),
-      linear-gradient(180deg,#3a0d0f,#1a0807);
+      radial-gradient(600px 300px at 50% 0%, rgba(22,163,74,.35), transparent 60%),
+      linear-gradient(180deg,#0a2e1a,#1a0807);
     border:1px solid rgba(232,185,74,.25);
     position:relative;overflow:hidden;
   }
@@ -425,7 +425,7 @@
     filter:blur(40px);pointer-events:none;
   }
   .cta-banner::before{top:-60px;left:-60px}
-  .cta-banner::after{bottom:-60px;right:-60px;background:radial-gradient(circle,rgba(216,36,44,.4),transparent 70%)}
+  .cta-banner::after{bottom:-60px;right:-60px;background:radial-gradient(circle,rgba(22,163,74,.4),transparent 70%)}
   .cta-banner h2{font-family:"Archivo Black";font-size:clamp(32px,4.4vw,52px);margin:0 0 16px;letter-spacing:-.02em;color:var(--cream);position:relative}
   .cta-banner h2 .gold{color:var(--gold)}
   .cta-banner p{color:var(--muted);font-size:17px;margin:0 0 28px;position:relative}
@@ -504,7 +504,7 @@
     transition:background .2s;
   }
   .lb-row:last-of-type{border-bottom:none}
-  .lb-row.featured{background:linear-gradient(90deg,rgba(216,36,44,.18),rgba(216,36,44,0));position:relative}
+  .lb-row.featured{background:linear-gradient(90deg,rgba(22,163,74,.18),rgba(22,163,74,0));position:relative}
   .lb-row.featured::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--red-glow)}
   .lb-rank{font-family:"Archivo Black";font-size:22px;color:var(--muted-2);text-align:center}
   .lb-row.top .lb-rank{color:var(--gold)}
@@ -547,15 +547,15 @@
     </a>
     <div class="nav-links">
       <a href="#how">How it works</a>
+      <a href="#revshare">Rev Share</a>
       <a href="#tokenomics">Tokenomics</a>
       <a href="#charity">Charity</a>
-      <a href="#partner">Partner</a>
       <a href="#roadmap">Roadmap</a>
       <a href="#buy">Buy</a>
       <a href="#faq">FAQ</a>
     </div>
     <div class="nav-cta">
-      <a class="btn btn-ghost" href="https://dexscreener.com" target="_blank" rel="noopener">Chart</a>
+      <a class="btn btn-ghost" href="#" target="_blank" rel="noopener">Chart</a>
       <a class="btn btn-primary" href="#buy">Buy $APR</a>
     </div>
   </div>
@@ -565,11 +565,11 @@
 <section class="hero" id="top">
   <div class="container hero-grid">
     <div class="hero-copy">
-      <span class="eyebrow"><span class="dot"></span>Live on Solana · Dividends paying</span>
-      <h1 class="display">Hold <span class="gold">$APR.</span><br/>Earn <span class="accent">$APPLE.</span><br/>Heal a fox.</h1>
-      <p class="lede">$APR is the rewards token for $APPLE — the #2 charity coin on donate.gg, raising care for <strong style="color:var(--cream);font-weight:500">Apple</strong>, a baby fox born with hydrocephalus and rescued by Arctic Fox Daily Rescue. 5% of every $APR trade buys back $APPLE and distributes it to holders. Hold $APR. Earn $APPLE. Support the sanctuary.</p>
+      <span class="eyebrow"><span class="dot"></span>Live on Solana · 4% Buy · 4% Sell · 100% $APPLE Rewards</span>
+      <h1 class="display">Hold <span class="gold">$APR.</span><br/>Earn <span class="accent">$APPLE.</span><br/>Save Apple.</h1>
+      <p class="lede">$APR is the rewards token for $APPLE — the #2 charity coin on donate.gg. <strong style="color:var(--cream);font-weight:500">4% buy &amp; 4% sell tax</strong>, 100% routed back as $APPLE rewards to every holder. You earn. The fox sanctuary gets funded. Arctic Fox Daily Wildlife Rescue gets Apple the care she needs.</p>
       <div class="hero-cta">
-        <a class="btn btn-primary" href="https://jup.ag" target="_blank" rel="noopener">
+        <a class="btn btn-primary" href="#" target="_blank" rel="noopener">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H9M17 7V15" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
           Buy on Jupiter
         </a>
@@ -582,15 +582,15 @@
       <div class="contract-card">
         <div>
           <div class="label">CA — Solana SPL</div>
-          <div class="addr" id="ca">APRr3wDsCh4r1ty7okenCAplACEhO1der1111111111</div>
+          <div class="addr" id="ca" style="color:var(--muted);font-style:italic">Dropping soon — check X for the announcement</div>
         </div>
-        <button class="copy-btn" id="copyBtn" type="button">COPY</button>
+        <button class="copy-btn" id="copyBtn" type="button" disabled style="opacity:.4;cursor:default">TBA</button>
       </div>
     </div>
 
     <div class="medallion-wrap">
       <div class="medallion-glow"></div>
-      <img class="medallion-img" src="assets/apr-coin.jpg" alt="APR Apple Rewards — a baby fox holding an apple"/>
+      <img class="medallion-img" src="assets/aprcoin.jpg" alt="APR Apple Rewards — a baby fox holding an apple"/>
       <div class="ring-orbit"></div>
       <div class="floating-tag tag-1">
         <div class="ico">↻</div>
@@ -624,12 +624,12 @@
     <div class="stat">
       <div class="k">Foxes rescued (lifetime)</div>
       <div class="v"><span data-count="100">0</span>+</div>
-      <div class="sub">by Arctic Fox Daily Rescue</div>
+      <div class="sub">by Arctic Fox Daily Wildlife Rescue</div>
     </div>
     <div class="stat">
-      <div class="k">$APR tax → buybacks</div>
-      <div class="v"><span data-count="5">0</span><span class="unit">%</span></div>
-      <div class="sub up">100% routed to $APPLE</div>
+      <div class="k">$APR tax → $APPLE rewards</div>
+      <div class="v"><span data-count="4">0</span><span class="unit">%</span></div>
+      <div class="sub up">buy &amp; sell · 100% to holders</div>
     </div>
   </div>
 </section>
@@ -640,30 +640,53 @@
     <div class="section-head">
       <div>
         <span class="kicker">The mechanic</span>
-        <h2>5% tax. <span class="accent">100% to buybacks.</span></h2>
+        <h2>4% tax. <span class="accent">100% to $APPLE rewards.</span></h2>
       </div>
-      <p class="lead">Every $APR transaction routes 5% to a buyback wallet that swaps SOL into $APPLE on Jupiter, then distributes that $APPLE to $APR holders. The price pressure on $APPLE flows directly to the Arctic Fox Daily Rescue charity wallet on donate.gg.</p>
+      <p class="lead">Every $APR buy and sell routes 4% to a rewards wallet that swaps into $APPLE on Jupiter, then distributes that $APPLE to all $APR holders. You earn $APPLE automatically — and every buyback funds Arctic Fox Daily Wildlife Rescue on donate.gg.</p>
     </div>
 
     <div class="how-grid">
       <div class="step">
         <div class="step-num">01</div>
         <h3>Buy $APR.</h3>
-        <p>Swap SOL for $APR on Jupiter or Raydium. The moment $APR lands in your wallet you're eligible for the next buyback distribution.</p>
+        <p>Swap SOL for $APR on Jupiter. The moment $APR lands in your wallet you're eligible for the next distribution cycle — no staking, no minimum.</p>
         <div class="meta"><div class="ico">⚡</div>~30s on Solana</div>
       </div>
       <div class="step">
         <div class="step-num">02</div>
-        <h3>5% tax buys $APPLE.</h3>
-        <p>The protocol takes 5% from every $APR trade, sends it to the buyback wallet, and market-buys $APPLE on Jupiter — boosting the charity coin every time someone trades.</p>
-        <div class="meta"><div class="ico">🍎</div>buybacks publicly verifiable</div>
+        <h3>4% buy &amp; sell → $APPLE.</h3>
+        <p>Every buy and every sell triggers a 4% tax. 100% of that tax market-buys $APPLE on Jupiter — boosting the charity coin and Arctic Fox Daily Wildlife Rescue every single trade.</p>
+        <div class="meta"><div class="ico">🍎</div>100% to $APPLE · publicly verifiable</div>
       </div>
       <div class="step">
         <div class="step-num">03</div>
         <h3>$APPLE rains on holders.</h3>
-        <p>Bought-back $APPLE is distributed pro-rata to all $APR holders. You get $APPLE in your wallet. The fox sanctuary gets funded. Everyone wins.</p>
+        <p>Bought $APPLE is distributed pro-rata to all $APR holders. You earn $APPLE in your wallet automatically. The fox sanctuary gets funded. Apple the fox gets the care she deserves.</p>
         <div class="meta"><div class="ico">♥</div>auto-distributed on-chain</div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVSHARE -->
+<section class="block" id="revshare" style="padding-top:0;padding-bottom:80px">
+  <div class="container">
+    <div class="section-head" style="margin-bottom:36px">
+      <div>
+        <span class="kicker">Revenue Share</span>
+        <h2>More ways to <span class="gold">earn.</span></h2>
+      </div>
+      <p class="lead">Beyond $APPLE rewards, $APR holders will participate in protocol revenue share. Details dropping soon — follow <a href="https://x.com/AppleRewardsAPR" target="_blank" rel="noopener" style="color:var(--gold);border-bottom:1px solid rgba(232,185,74,.4)">@AppleRewardsAPR</a> for the announcement.</p>
+    </div>
+    <div style="
+      padding:48px;border-radius:22px;text-align:center;
+      background:linear-gradient(180deg,var(--surface),var(--bg-2));
+      border:1px dashed var(--line-hi);
+      position:relative;overflow:hidden;
+    ">
+      <div style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(28px,3.5vw,44px);color:var(--muted);margin-bottom:16px">Coming soon.</div>
+      <p style="color:var(--muted-2);font-size:15px;max-width:520px;margin:0 auto 24px">Revenue share details will be announced shortly. Hold $APR to be eligible.</p>
+      <a class="btn btn-ghost" href="https://x.com/AppleRewardsAPR" target="_blank" rel="noopener">Follow for the drop →</a>
     </div>
   </div>
 </section>
@@ -671,8 +694,8 @@
 <!-- MARQUEE -->
 <div class="marquee" aria-hidden="true">
   <div class="marq-track">
-    <span>$APR · APPLE REWARDS · 5% TAX → $APPLE BUYBACKS · FOR APPLE THE FOX · #2 ON DONATE.GG · </span>
-    <span>$APR · APPLE REWARDS · 5% TAX → $APPLE BUYBACKS · FOR APPLE THE FOX · #2 ON DONATE.GG · </span>
+    <span>$APR · APPLE REWARDS · 4% BUY &amp; SELL → 100% $APPLE REWARDS · SAVE APPLE THE FOX · #2 ON DONATE.GG · </span>
+    <span>$APR · APPLE REWARDS · 4% BUY &amp; SELL → 100% $APPLE REWARDS · SAVE APPLE THE FOX · #2 ON DONATE.GG · </span>
   </div>
 </div>
 
@@ -682,9 +705,9 @@
     <div class="section-head">
       <div>
         <span class="kicker">Tokenomics</span>
-        <h2>A 5% tax that <span class="gold">actually does something.</span></h2>
+        <h2>A 4% tax that <span class="gold">actually does something.</span></h2>
       </div>
-      <p class="lead">Total supply 1,000,000,000 $APR. Liquidity burned at launch. Contract renounced. 100% of the tax becomes $APPLE buybacks.</p>
+      <p class="lead">Total supply 1,000,000,000 $APR. Liquidity burned at launch. Contract renounced. 4% buy &amp; sell — 100% becomes $APPLE rewards paid to holders.</p>
     </div>
 
     <div class="tok-wrap">
@@ -696,35 +719,35 @@
             </filter>
           </defs>
           <circle cx="100" cy="100" r="80" fill="none" stroke="#22130f" stroke-width="28"/>
-          <!-- 95% circulating -->
+          <!-- 96% circulating -->
           <circle cx="100" cy="100" r="80" fill="none" stroke="#f6efe0" stroke-width="28"
-            stroke-dasharray="477.52 502.65" stroke-dashoffset="0" transform="rotate(-90 100 100)"/>
-          <!-- 5% buyback -->
-          <circle cx="100" cy="100" r="80" fill="none" stroke="#d8242c" stroke-width="28"
-            stroke-dasharray="25.13 502.65" stroke-dashoffset="-477.52" transform="rotate(-90 100 100)"/>
+            stroke-dasharray="482.54 502.65" stroke-dashoffset="0" transform="rotate(-90 100 100)"/>
+          <!-- 4% buyback -->
+          <circle cx="100" cy="100" r="80" fill="none" stroke="#16a34a" stroke-width="28"
+            stroke-dasharray="20.11 502.65" stroke-dashoffset="-482.54" transform="rotate(-90 100 100)"/>
         </svg>
         <div class="center">
           <div>
-            <div class="big">5%</div>
-            <div class="small">→ $APPLE buybacks</div>
+            <div class="big">4%</div>
+            <div class="small">→ $APPLE rewards</div>
           </div>
         </div>
       </div>
 
       <div class="tok-list">
         <div class="tok-row">
-          <div class="tok-swatch" style="background:#d8242c"></div>
-          <div class="name">$APPLE buyback &amp; distribute<small>5% tax → market-buys $APPLE → paid to $APR holders</small></div>
-          <div class="pct">5%</div>
+          <div class="tok-swatch" style="background:#16a34a"></div>
+          <div class="name">$APPLE rewards<small>4% buy &amp; sell tax → market-buys $APPLE → distributed to all $APR holders</small></div>
+          <div class="pct">4%</div>
         </div>
         <div class="tok-row" style="border-style:dashed">
           <div class="tok-swatch" style="background:#f6efe0"></div>
           <div class="name">Circulating supply<small>fair launch · LP burned · contract renounced</small></div>
-          <div class="pct" style="color:var(--cream)">95%</div>
+          <div class="pct" style="color:var(--cream)">96%</div>
         </div>
         <div class="tok-row">
           <div class="tok-swatch" style="background:#e8b94a"></div>
-          <div class="name">Charity flow-through<small>$APPLE is itself a donate.gg charity coin — every buyback funds Arctic Fox Daily Rescue</small></div>
+          <div class="name">Charity flow-through<small>$APPLE is itself a donate.gg charity coin — every buyback funds Arctic Fox Daily Wildlife Rescue</small></div>
           <div class="pct" style="color:var(--gold);font-size:14px;letter-spacing:.04em">indirect</div>
         </div>
       </div>
@@ -737,7 +760,7 @@
   <div class="container charity-grid">
     <div class="charity-art">
       <span class="charity-tag">♥ Our partner</span>
-      <img class="stamp" src="assets/apr-coin.jpg" alt="Apple — the baby fox $APR supports"/>
+      <img class="stamp" src="assets/aprcoin.jpg" alt="Apple — the baby fox $APR supports"/>
       <div class="charity-progress">
         <div class="top"><span>$APPLE raised · 6 days</span><b>$130,611 · #2 globally</b></div>
         <div class="progress-bar"><div class="progress-fill"></div></div>
@@ -745,10 +768,10 @@
     </div>
 
     <div>
-      <span class="kicker">Arctic Fox Daily Rescue</span>
+      <span class="kicker">Arctic Fox Daily Wildlife Rescue</span>
       <h2>Meet <span class="accent">Apple.</span> A baby fox born with hydrocephalus.</h2>
-      <p>$APR exists because of one fox. <strong>Apple</strong> was born with hydrocephalus — a build-up of fluid on the brain that, for most rescued foxes, ends in euthanasia. Kimberly, founder of <strong>Arctic Fox Daily Rescue</strong>, refused. Apple is now in round-the-clock specialist care, funded by the $APPLE charity coin on donate.gg.</p>
-      <p>$APR is the rewards layer on top of that. Every $APR trade buys back $APPLE — boosting the charity coin's price, growing its raises, and putting more $APPLE in your wallet at the same time.</p>
+      <p>$APR exists because of one fox. <strong>Apple</strong> was born with hydrocephalus — a build-up of fluid on the brain that, for most rescued foxes, ends in euthanasia. Kimberly, founder of <strong>Arctic Fox Daily Wildlife Rescue, Inc.</strong>, refused. Apple is now in round-the-clock specialist care, funded by the $APPLE charity coin on donate.gg.</p>
+      <p>$APR is the rewards layer on top of that. Every $APR buy and sell sends 4% into $APPLE — boosting the charity coin, growing its raises, and putting more $APPLE in your wallet automatically.</p>
       <div class="impact-grid">
         <div class="impact"><div class="n">100+</div><div class="l">foxes rescued</div></div>
         <div class="impact"><div class="n">$130K</div><div class="l">raised in 6 days</div></div>
@@ -770,22 +793,17 @@
         <span class="kicker">Our partner</span>
         <h2>About <span class="gold">Arctic Fox</span> Daily Rescue.</h2>
       </div>
-      <p class="lead">Founded by Kimberly, Arctic Fox Daily Rescue is a sanctuary built on one simple belief: every fox deserves a chance. From abandoned kits to medically complex rescues like Apple, the team provides round-the-clock care, specialist vet support, and a forever home.</p>
+      <p class="lead">Founded by Kimberly, Arctic Fox Daily Wildlife Rescue is a sanctuary built on one simple belief: every fox deserves a chance. From abandoned kits to medically complex rescues like Apple, the team provides round-the-clock care, specialist vet support, and a forever home.</p>
     </div>
 
     <div class="partner-card">
-      <div class="partner-portrait">
-        <div>
-          <b>Kimberly</b>
-          Founder
-          <div class="role">Arctic Fox Daily Rescue</div>
-          <div style="margin-top:18px;opacity:.4;font-size:10px">[ portrait photo<br/>coming soon ]</div>
-        </div>
+      <div class="partner-portrait" style="padding:0;overflow:hidden;background:none;border:1px solid var(--line-hi)">
+        <img src="assets/Kimberly.webp" alt="Kimberly — Founder, Arctic Fox Daily Wildlife Rescue" style="width:100%;height:100%;object-fit:cover;display:block"/>
       </div>
       <div class="partner-quote">
         <div class="qmark" aria-hidden="true">"</div>
         <blockquote>Many foxes with hydrocephalus are euthanized. I refused. Apple deserves the same shot at life every other animal gets.</blockquote>
-        <cite>— <b>Kimberly</b> · Founder, Arctic Fox Daily Rescue</cite>
+        <cite>— <b>Kimberly</b> · Founder, Arctic Fox Daily Wildlife Rescue</cite>
         <div class="partner-meta">
           <span><b>100+</b>Foxes rescued</span>
           <span><b>Full-time</b>Sanctuary</span>
@@ -816,7 +834,7 @@
       <div class="lb-row top">
         <div class="lb-rank">1</div>
         <div class="lb-name">
-          <div class="lb-avatar" style="background:linear-gradient(180deg,#1e88e5,#0d47a1);color:#fff;font-size:18px">★</div>
+          <div class="lb-avatar" style="border:none"><img src="assets/MakeAWIsh.jpg" alt="Make A Wish" style="width:100%;height:100%;object-fit:cover"/></div>
           <div>
             <div class="nm">Make A Wish</div>
             <div class="tk">$WISH</div>
@@ -828,7 +846,7 @@
         <div class="lb-rank">2</div>
         <div class="lb-name">
           <div class="lb-avatar" style="border:none">
-            <img src="assets/apr-coin.jpg" alt="$APPLE" style="width:100%;height:100%;object-fit:cover"/>
+            <img src="assets/aprcoin.jpg" alt="$APPLE" style="width:100%;height:100%;object-fit:cover"/>
           </div>
           <div>
             <div class="nm">Apple <span style="color:var(--gold);font-size:11px;letter-spacing:.18em;text-transform:uppercase;margin-left:6px">supported by $APR</span></div>
@@ -840,7 +858,7 @@
       <div class="lb-row">
         <div class="lb-rank">3</div>
         <div class="lb-name">
-          <div class="lb-avatar" style="background:linear-gradient(180deg,#d32f2f,#7f0f0f);color:#fff;font-size:20px">+</div>
+          <div class="lb-avatar" style="border:none"><img src="assets/St.Jude.jpg" alt="St. Jude" style="width:100%;height:100%;object-fit:cover"/></div>
           <div>
             <div class="nm">St. Jude</div>
             <div class="tk">$STJUDE</div>
@@ -966,11 +984,11 @@
     <div class="faq-list">
       <details class="faq" open>
         <summary>What is $APR exactly?</summary>
-        <div class="a">$APR (Apple Rewards) is the rewards token for $APPLE, the #2 charity coin on donate.gg. 5% of every $APR transaction is used to market-buy $APPLE on Jupiter and distribute that $APPLE pro-rata to all $APR holders. You hold $APR, you earn $APPLE in your wallet automatically.</div>
+        <div class="a">$APR (Apple Rewards) is the rewards token for $APPLE, the #2 charity coin on donate.gg. $APR charges a 4% buy tax and a 4% sell tax. 100% of that tax is used to market-buy $APPLE on Jupiter and distribute that $APPLE pro-rata to all $APR holders. You hold $APR, you earn $APPLE in your wallet automatically.</div>
       </details>
       <details class="faq">
         <summary>Who is Apple the fox?</summary>
-        <div class="a">Apple is a baby fox born with hydrocephalus — a build-up of fluid on the brain. Most foxes with this condition are euthanized. Kimberly, founder of Arctic Fox Daily Rescue, refused. Apple is in round-the-clock specialist care, funded by the $APPLE charity coin. $APR exists to amplify that coin and her recovery.</div>
+        <div class="a">Apple is a baby fox born with hydrocephalus — a build-up of fluid on the brain. Most foxes with this condition are euthanized. Kimberly, founder of Arctic Fox Daily Wildlife Rescue, refused. Apple is in round-the-clock specialist care, funded by the $APPLE charity coin. $APR exists to amplify that coin and her recovery.</div>
       </details>
       <details class="faq">
         <summary>How does $APR help the charity if the tax goes to buybacks, not the wallet?</summary>
@@ -986,7 +1004,7 @@
       </details>
       <details class="faq">
         <summary>Is this affiliated with Apple Inc.?</summary>
-        <div class="a">No. $APR has no affiliation with Apple Inc. "Apple" refers to the baby fox in care at Arctic Fox Daily Rescue and the $APPLE community charity coin on donate.gg. This is a community project.</div>
+        <div class="a">No. $APR has no affiliation with Apple Inc. "Apple" refers to the baby fox in care at Arctic Fox Daily Wildlife Rescue and the $APPLE community charity coin on donate.gg. This is a community project.</div>
       </details>
     </div>
 
@@ -1011,7 +1029,7 @@
           <div class="brand-mark" aria-hidden="true"></div>
           <div class="brand-name">APPLE <b>REWARDS</b></div>
         </a>
-        <p>$APR is the rewards token for $APPLE — a charity coin on donate.gg supporting Arctic Fox Daily Rescue and a baby fox named Apple. Not affiliated with Apple Inc.</p>
+        <p>$APR is the rewards token for $APPLE — a charity coin on donate.gg supporting Arctic Fox Daily Wildlife Rescue and a baby fox named Apple. Not affiliated with Apple Inc.</p>
       </div>
       <div>
         <h5>Token</h5>
@@ -1027,16 +1045,16 @@
         <ul>
           <li><a href="https://www.appleonsol.com/" target="_blank" rel="noopener">$APPLE on Solana</a></li>
           <li><a href="https://donate.gg" target="_blank" rel="noopener">donate.gg</a></li>
-          <li><a href="#partner">Arctic Fox Daily Rescue</a></li>
+          <li><a href="#partner">Arctic Fox Daily Wildlife Rescue</a></li>
           <li><a href="#leaderboard">Charity leaderboard</a></li>
         </ul>
       </div>
       <div>
         <h5>Community</h5>
         <ul>
-          <li><a href="#" aria-label="Twitter / X">Twitter / X</a></li>
-          <li><a href="#" aria-label="Telegram">Telegram</a></li>
-          <li><a href="https://dexscreener.com" target="_blank" rel="noopener">Dexscreener</a></li>
+          <li><a href="https://x.com/AppleRewardsAPR" target="_blank" rel="noopener" aria-label="Twitter / X">Twitter / X</a></li>
+          <li><a href="https://t.me/AppleRewards" target="_blank" rel="noopener" aria-label="Telegram">Telegram</a></li>
+          <li><a href="#" target="_blank" rel="noopener">Dexscreener</a></li>
           <li><a href="https://solscan.io" target="_blank" rel="noopener">Solscan</a></li>
         </ul>
       </div>
@@ -1045,10 +1063,10 @@
     <div class="foot-bottom">
       <div>© 2026 Apple Rewards · For the foxes 🦊</div>
       <div class="socials">
-        <a class="soc" href="#" aria-label="X / Twitter">
+        <a class="soc" href="https://x.com/AppleRewardsAPR" target="_blank" rel="noopener" aria-label="X / Twitter">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2H21l-6.52 7.452L22 22h-6.79l-4.74-6.36L4.99 22H2.23l6.99-7.99L2 2h6.94l4.28 5.78L18.244 2Zm-1.19 18h1.66L7.06 4H5.28l11.774 16Z"/></svg>
         </a>
-        <a class="soc" href="#" aria-label="Telegram">
+        <a class="soc" href="https://t.me/AppleRewards" target="_blank" rel="noopener" aria-label="Telegram">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.5 3.5 2 11.2c-1.3.5-1.3 1.4 0 1.8l4.7 1.5L17.5 7c.5-.3 1-.1.6.3L9.5 15l-.3 4.7c.4 0 .6-.2.8-.4l2-2 4.2 3.1c.8.4 1.3.2 1.5-.7l2.7-12.7c.3-1.3-.5-1.9-1.4-1.5Z"/></svg>
         </a>
         <a class="soc" href="#" aria-label="Discord">
