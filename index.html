@@ -233,17 +233,21 @@
   @media (max-width:920px){.how-grid{grid-template-columns:1fr}}
   .step{
     position:relative;
-    background:linear-gradient(180deg,var(--surface),var(--bg-2));
-    border:1px solid var(--line);
+    background:
+      radial-gradient(500px 400px at 100% 0%, rgba(22,163,74,.28), transparent 55%),
+      radial-gradient(400px 300px at 0% 100%, rgba(74,222,128,.10), transparent 60%),
+      linear-gradient(180deg,#0a1f10,#060d08);
+    border:1px solid rgba(74,222,128,.35);
     border-radius:22px;
     padding:32px 28px 28px;
     overflow:hidden;
-    transition:border-color .25s, transform .25s;
+    box-shadow:0 0 0 1px rgba(74,222,128,.06), 0 8px 28px rgba(22,163,74,.18);
+    transition:border-color .25s, transform .25s, box-shadow .25s;
   }
-  .step:hover{border-color:rgba(232,185,74,.4);transform:translateY(-4px)}
+  .step:hover{border-color:rgba(74,222,128,.55);transform:translateY(-4px);box-shadow:0 0 0 1px rgba(74,222,128,.1), 0 14px 40px rgba(22,163,74,.28)}
   .step::before{
     content:"";position:absolute;inset:-1px;border-radius:22px;pointer-events:none;
-    background:linear-gradient(160deg,rgba(232,185,74,.25),transparent 40%);
+    background:linear-gradient(160deg,rgba(74,222,128,.18),transparent 40%);
     mask:linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
     mask-composite:exclude;-webkit-mask-composite:xor;
     padding:1px;
@@ -491,18 +495,22 @@
 
   /* ===== LEADERBOARD ===== */
   .lb-wrap{
-    border:1px solid var(--line);border-radius:22px;
-    background:linear-gradient(180deg,var(--surface),var(--bg-2));
+    border:1px solid rgba(74,222,128,.35);border-radius:22px;
+    background:
+      radial-gradient(700px 500px at 100% 0%, rgba(22,163,74,.28), transparent 55%),
+      radial-gradient(500px 400px at 0% 100%, rgba(74,222,128,.10), transparent 60%),
+      linear-gradient(180deg,#0a1f10,#060d08);
     overflow:hidden;
+    box-shadow:0 0 0 1px rgba(74,222,128,.06), 0 24px 60px rgba(22,163,74,.18);
   }
   .lb-head{
     display:grid;grid-template-columns:60px 1fr auto;gap:16px;align-items:center;
-    padding:18px 24px;border-bottom:1px solid var(--line);
+    padding:18px 24px;border-bottom:1px solid rgba(74,222,128,.2);
     font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted-2);
   }
   .lb-row{
     display:grid;grid-template-columns:60px 1fr auto;gap:16px;align-items:center;
-    padding:18px 24px;border-bottom:1px solid var(--line);
+    padding:18px 24px;border-bottom:1px solid rgba(74,222,128,.12);
     transition:background .2s;
   }
   .lb-row:last-of-type{border-bottom:none}
@@ -524,7 +532,7 @@
   .lb-amt{font-family:"JetBrains Mono";font-size:15px;color:var(--cream);font-weight:500;text-align:right}
   .lb-row.top .lb-amt{color:var(--gold)}
   .lb-row.featured .lb-amt{color:var(--gold)}
-  .lb-foot{padding:18px 24px;text-align:center;border-top:1px solid var(--line);font-size:13px;color:var(--muted)}
+  .lb-foot{padding:18px 24px;text-align:center;border-top:1px solid rgba(74,222,128,.2);font-size:13px;color:var(--muted)}
 
   /* ===== MARQUEE ===== */
   .marquee{
@@ -682,8 +690,9 @@
     </div>
     <div style="
       padding:48px;border-radius:22px;text-align:center;
-      background:linear-gradient(180deg,var(--surface),var(--bg-2));
-      border:1px dashed var(--line-hi);
+      background:radial-gradient(700px 500px at 100% 0%,rgba(22,163,74,.28),transparent 55%),radial-gradient(500px 400px at 0% 100%,rgba(74,222,128,.10),transparent 60%),linear-gradient(180deg,#0a1f10,#060d08);
+      border:1px dashed rgba(74,222,128,.4);
+      box-shadow:0 0 0 1px rgba(74,222,128,.06),0 24px 60px rgba(22,163,74,.18);
       position:relative;overflow:hidden;
     ">
       <div style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(28px,3.5vw,44px);color:var(--muted);margin-bottom:16px">Coming soon.</div>
